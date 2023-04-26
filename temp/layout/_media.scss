@@ -1,0 +1,23 @@
+$mobile: 400px;
+$tablet: 800px;
+$desktop: 1500px;
+
+@mixin minscreensize($device)
+{
+    
+    @if $device == phone{
+        @media only screen and (max-width: $mobile)
+        {@content;}
+    }
+    @if $device == tablet{
+        @media only screen and (max-width: $tablet)
+        {@content;}
+    }
+    @if $device == desktop{
+        @media only screen and (max-width: $desktop)
+        {@content;}
+    }}
+    /*@include minscreensize(tablet) {
+        @include flex;
+        font-size: 2em;
+    }*/

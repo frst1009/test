@@ -1,0 +1,470 @@
+@import './base/reset';
+@import './base/colors';
+@import './components/buttons';
+@import './base/mixin';
+
+html {
+    font-size: 62.5%;
+}
+
+//navigation bar at the top
+body {
+    color: white;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    @include container;
+    display: flex;
+    height: 6.7rem;
+    background-color: rgba(163, 69, 84, 0.153);
+
+    span {
+        margin-right: 43.5rem;
+    }
+
+    ul {
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+
+        li {
+            display: block;
+            font-size: 1.4rem;
+            padding-right: 3.2rem;
+            text-align: center;
+            font-weight: 400;
+            color: $divtext;
+            margin: auto;
+
+            i {
+                width: 2.4rem;
+                height: 2.4rem;
+                padding-left: 0.2rem;
+            }
+        }
+    }
+}
+
+//navigation bar at the top ENDS HERE
+
+.hero {
+    background-image: url("/temp/pic/2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 24.8rem;
+    text-align: center;
+
+    &-container {
+        @include container;
+
+        h1 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 70px;
+            color: white;
+        }
+
+        &__first-p {
+            font-size: 2.1rem;
+            width: 58.9rem;
+            margin: 5.5rem auto 4.8rem auto;
+        }
+
+        &__button-first {
+            @extend %btn;
+            background: linear-gradient(98.88deg, #8C01FA -2.99%, #000000 102.28%);
+            border: 1px solid #000000;
+            margin-right: 1.5rem;
+        }
+
+        &__button {
+            @extend %btn;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+
+        &__p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5rem;
+            padding-top: 12.1rem;
+            color: $linktextColor;
+            text-transform: uppercase;
+            margin-bottom: 3.3rem;
+        }
+    }
+
+    //hero container ENDS HERE  
+
+    //hero div icons starts here
+    &__div-icons {
+        @include container;
+
+        span {
+            width: 11.3rem;
+            height: 3.7rem;
+            padding: 0 2rem;
+
+            img {
+                width: 11.4rem;
+                height: 3.7rem;
+            }
+        }
+    }
+
+}
+
+//main container starts here
+.main {
+    background-image: url(/temp/pic/20.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__block {
+        padding-top: 12.4rem;
+        @include container;
+        @include flex;
+
+        &-columns {
+            width: 57rem;
+            height: 57.3rem;
+
+            .first-child {
+                font-size: 3.8rem;
+                padding-top: 7.7rem;
+                padding-left: 2rem;
+                padding-right: 23.4rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 400;
+                color: $divtext;
+            }
+        }
+    }
+}
+
+.article__column {
+    @include container;
+    @include flex;
+    padding-bottom: 12.4rem;
+
+    &-box {
+        width: 34rem;
+        height: 57.3rem;
+
+        .first {
+            font-size: 3.8rem;
+            padding-top: 6.4rem;
+            padding-left: 2rem;
+        }
+
+        li {
+            padding-top: 0.8rem;
+            font-size: 1.6rem;
+            color: $divtext;
+            padding-left: 2rem;
+        }
+    }
+
+    &-second {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 76rem;
+        height: 57.3rem;
+
+        &-divs:first-of-type {
+            margin-top: 9.6rem;
+        }
+
+        &-divs {
+            width: 34rem;
+            height: 20rem;
+            margin-bottom: 3rem;
+
+            p:first-of-type {
+                font-size: 2.8rem;
+
+                i {
+                    padding-right: 1.7rem;
+                }
+            }
+
+            p {
+                font-size: 1.7rem;
+                color: $divtext;
+                padding-right: 5.8rem;
+            }
+
+            li {
+                padding-top: 2.7rem;
+                font-size: 2.8rem;
+                padding-bottom: 1.1rem;
+            }
+        }
+    }
+}
+
+//main container ENDS HERE
+
+//graphity containing frame
+.build {
+    background-color: #000000;
+
+    &__nav {
+        @include container;
+        display: flex;
+        height: 4.8rem;
+
+        p {
+            font-size: 3.8rem;
+            font-weight: 300;
+            margin-right: 36.1rem;
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                font-size: 1.5rem;
+                padding: 1rem;
+                background-color: $background;
+                border-radius: 15px;
+                margin-right: 1.6rem;
+            }
+
+            .active {
+                border: 1px solid #A962FF;
+            }
+        }
+    }
+
+    &__frame {
+        margin-top: 3.2rem;
+        margin-bottom: 2rem;
+        @include container;
+        display: flex;
+
+        &-picture {
+            width: 55.5rem;
+            height: 40rem;
+        }
+
+        &-text {
+
+            height: 40rem;
+            background: $background;
+            padding-top: 9.4rem;
+            padding-left: 4.8rem;
+            padding-right: 7.3rem;
+
+            p {
+                font-size: 2.1rem;
+                padding-top: 1.4rem;
+                padding-bottom: 1.4rem;
+            }
+
+            a {
+                font-size: 2rem;
+                color: $linktextColor;
+            }
+        }
+    }
+
+    .build__icons {
+        @include container;
+        background-color: $background;
+        padding: 0 8.2rem;
+        display: flex;
+        justify-content: center;
+        height: 6.2rem;
+
+        img:not(:last-of-type) {
+            margin-right: 21.7rem;
+
+        }
+    }
+}
+
+//graphity containing frame ENDS HERE
+
+//community card containing part
+.community {
+    background-color: #000000;
+
+    .header {
+        @include container;
+        padding-top: 12.2rem;
+
+        h3 {
+            font-size: 3.8rem;
+            font-weight: 400;
+            margin-bottom: 3.3rem;
+        }
+    }
+
+    &__column {
+        display: flex;
+        gap: 2rem;
+        overflow: hidden;
+
+        &-first {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            &-in {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25rem;
+                height: 20rem;
+                background-color: $background;
+
+                &:nth-of-type(2) {
+                    width: 30rem;
+                    height: 20rem;
+                }
+
+                span {
+                    margin: auto;
+                }
+
+                p:first-of-type {
+                    font-size: 3.7rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .community__text {
+        @include container;
+        background-image: url(/temp/pic/20.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 12.8rem 23.3rem;
+        text-align: center;
+
+        p {
+            font-weight: 400;
+            font-size: 3.8rem;
+            margin-bottom: 1.8rem;
+        }
+
+        button {
+            @extend %btn;
+            background: linear-gradient(98.88deg, #8C01FA -2.99%, #000000 102.28%);
+            border: 1px solid #000000;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+//community card containing part ENDS HERE
+footer {
+    background-color: #000000;
+    height: 38.3rem;
+
+    .footer {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+
+        &__rights {
+            margin-top: 8rem;
+            margin-right: 30.9rem;
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 400;
+                padding-top: 2rem;
+                padding-bottom: 2.4rem;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+
+                i {
+                    font-size: 1.9rem;
+                    color: $divtext;
+                    padding-right: 1rem;
+                }
+            }
+        }
+
+        &-info {
+            display: flex;
+            margin-top: 8rem;
+
+            div {
+                margin-right: 6.8rem;
+
+                .first {
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 100;
+                    letter-spacing: 0.3rem;
+                    padding-bottom: 1.3rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    color: $divtext;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .nav-bar span {
+        margin-right: 20rem;
+    }
+
+    .hero-container h1 {
+        font-size: 5rem;
+    }
+
+    .hero-container p {
+        font-size: 1rem;
+    }
+
+    .hero__div-icons span img {
+        width: 7rem;
+        height: 2rem;
+    }
+
+    .main__block-columns .first-child {
+        font-size: 2rem;
+    }
+
+    .main__block-columns-icon img {
+        width: 35rem;
+        height: 9rem;
+    }
+
+    .article__column-box .first {
+        font-size: 2rem;
+    }
+
+    .article__column-second-divs p {
+        font-size: 0.9rem;
+    }
+}

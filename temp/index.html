@@ -1,34 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/temp/main.css">
+  <script src="https://kit.fontawesome.com/f07d1e9ea8.js" crossorigin="anonymous"></script>
+  <title>Template</title>
 </head>
+
 <body>
   <nav class="nav-bar">
-    <h3 class="nav-bar__head">Solana</h3>
+    <span class="nav-bar-icon"><img src="/temp/pic/3.png" alt=""></span>
     <ul class="list">
-        <li>Learn</li>
-        <li>Build</li>
-        <li>Network</li>
-        <li>Community</li>
+      <li>Learn<i class="fa-solid fa-angle-down"></i></li>
+      <li>Build<i class="fa-solid fa-angle-down"></i></li>
+      <li>Network<i class="fa-solid fa-angle-down"></i></li>
+      <li>Community<i class="fa-solid fa-angle-down"></i></li>
     </ul>
   </nav>
   <section class="hero">
-    <h1>Powerful for developers.</h1>
-    <h1>Fast for everyone.</h1>
-    <p>Bring blockchain to the people. Solana supports experiences for power users, new consumers, and everyone in between.</p>
-    <button class="hero__button">START BUILDING</button>
-    <button class="hero__button">READ DOCS</button>
-        <p class="hero__p">Powering tools and integrations from companies all around the world</p>
-  </section>
-  <section class="main">
-    <div class="main__block">
-        <p>Join a community</p>
+    <div class="hero-container">
+      <h1>Powerful for developers.</h1>
+      <h1>Fast for everyone.</h1>
+      <p class="hero-container__first-p">Bring blockchain to the people. Solana supports experiences for power users,
+        new consumers, and everyone in
+        between.</p>
+      <button class="hero-container__button-first">START BUILDING</button>
+      <button class="hero-container__button">READ DOCS</button>
+      <p class="hero-container__p">Powering tools and integrations from companies all around the world</p>
     </div>
-    <div class="main__block"></div>
+    <div class="hero__div-icons">
+      <span><img src="/temp/pic/4.png" alt=""></span>
+      <span><img src="/temp/pic/5.png" alt=""></span>
+      <span><img src="/temp/pic/6.png" alt=""></span>
+      <span><img src="/temp/pic/7.png" alt=""></span>
+      <span><img src="/temp/pic/8.png" alt=""></span>
+      <span><img src="/temp/pic/9.png" alt=""></span>
+      <span><img src="/temp/pic/10.png" alt=""></span>
+    </div>
   </section>
+  <!--the section with numbers-->
+  <section class="main container">
+    <div class="main__block">
+      <div class="main__block-columns">
+        <p class="first-child">Join a community of millions.</p>
+      </div>
+      <div class="main__block-columns">
+        <span class="main__block-columns-icon">
+          <img src="/temp/pic/13.png" alt="icon">
+          <p>Active accounts</p>
+        </span>
+        <span class="main__block-columns-icon">
+          <img src="/temp/pic/11.png" alt="icon">
+          <p>NFTs minted</p>
+        </span>
+        <span class="main__block-columns-icon">
+          <img src="/temp/pic/12.png" alt="icon">
+          <p>Average cost per transaction</p>
+        </span>
+      </div>
+    </div>
+    <!-- </section>-->
+    <!--the section with numbers ends here-->
+    <!--column structured section-->
+    <!--<section class="article container">-->
+    <div class="article__column">
+      <div class="article__column-box">
+        <p class="first">Made for <br> mass adoption.</p>
+        <ul>
+          <li>LIVE DATA</li>
+        </ul>
+      </div>
+      <div class="article__column-second">
+        <div class="article__column-second-divs">
+          <p><i class="fa-solid fa-grip-lines-vertical" style="color: #7292ca;"></i>Fast</p>
+          <p>Don’t keep your users waiting. Solana has block times of 400 milliseconds — and as hardware gets faster, so
+            will the network.</p>
+          <ul>
+            <li>3,969</li>
+          </ul>
+          <p>Transactions per second</p>
+        </div>
+        <div class="article__column-second-divs">
+          <p><i class="fa-solid fa-grip-lines-vertical" style="color: #7f4bbe;"></i>Scalable</p>
+          <p>Get big, quick. Solana is made to handle thousands of transactions per second, and fees for both developers
+            and users remain less than $0.01.</p>
+          <ul>
+            <li>163,077,581,394</li>
+          </ul>
+          <p>Total transactions</p>
+        </div>
+        <div class="article__column-second-divs">
+          <p><i class="fa-solid fa-grip-lines-vertical" style="color: #c2c440;"></i>Decentralized</p>
+          <p>The Solana network is validated by thousands of nodes that operate independently of each other, ensuring
+            your
+            data remains secure and censorship resistant.</p>
+          <ul>
+            <li>1,675</li>
+          </ul>
+          <p>1,675</p>
+        </div>
+        <div class="article__column-second-divs">
+          <p><i class="fa-solid fa-grip-lines-vertical" style="color: #5dc440;"></i>Energy Efficient</p>
+          <p>Solana’s proof of stake network and other innovations minimize its impact on the environment. Each Solana
+            transaction uses about the same energy as a few Google searches.</p>
+          <ul>
+            <li>0%</li>
+          </ul>
+          <p>Net carbon impact</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--column structured section ends here-->
+  <!--graphity containing frame-->
+  <section class="build">
+    <nav class="build__nav">
+      <p>Build for growth.</p>
+      <ul>
+        <li class="active">NFTs</li>
+        <li>DeFi</li>
+        <li>Payments</li>
+        <li>Gaming</li>
+        <li>DAOs</li>
+      </ul>
+    </nav>
+    <div class="build__frame">
+      <div class="build__frame-picture"><img src="/temp/pic/IMAGE.png" alt="graphity"></div>
+      <div class="build__frame-text">
+        <span><img src="/temp/pic/image 9.png" alt="icon"></span>
+        <p>It’s time to bridge the digital and physical. Anybodies helps established brands like Toys’R’Us connect
+          real-life places and products with NFTs.</p>
+        <a href="#">Learn more about NFTs on Solana</a>
+      </div>
+    </div>
+    <nav class="build__icons">
+      <img src="/temp/pic/IMAGE (1).png" alt="icons">
+      <img src="/temp/pic/image 10.png" alt="icons">
+      <img src="/temp/pic/image 11.png" alt="icons">
+      <img src="/temp/pic/IMAGE (2).png" alt="icons">
+    </nav>
+  </section>
+  <!--graphity containing frame edns here-->
+  <!-- community picture layout-->
+  <section class="community">
+    <div class="header">
+      <h3>Join a thriving community.</h3>
+    </div>
+
+    <div class="community__column">
+
+      <div class="community__column-first">
+        <div class="community__column-first-in">
+          <span>
+            <p style="color: #F087FF; text-align:left;">11,000</p>
+            <p>Solana Hacker House participants</p>
+          </span>
+        </div>
+        <div class="community__column-first-in-image">
+          <img src="/temp/pic/Frame.png" alt="picture">
+        </div>
+      </div>
+
+      <!--only image column-->
+      <div class="community__column-first-img">
+        <img src="/temp/pic/Frame (1).png" alt="whole img">
+      </div>
+      <!--only image column ends here-->
+
+      <div class="community__column-first">
+        <div class="community__column-first-in-image">
+          <img src="/temp/pic/Frame (2).png" alt="picture">
+        </div>
+        <div class="community__column-first-in">
+          <span>
+            <p style="color: #19FB9B;text-align:center;">48,000</p>
+            <p>Developers building during Solana Hackathons</p>
+          </span>
+        </div>
+      </div>
+
+      <!--only image column-->
+      <div class="community__column-first-img">
+        <img src="/temp/pic/Frame (3).png" alt="whole img">
+      </div>
+      <!--only image column ends here-->
+
+      <div class="community__column-first">
+        <div class="community__column-first-in">
+          <span>
+            <p style="color: #FFEB3B;text-align:right;">3,800</p>
+            <p>Solana Breakpoint 2022 attendees</p>
+          </span>
+        </div>
+        <div class="community__column-first-in-image">
+        <img src="/temp/pic/Frame (4).png" alt="picture"></div>
+      </div>
+    </div>
+    <div class="community__text">
+     <p> It's time to join the thousands of creators, artists, and developers using Solana.
+    </p> <button>Start building</button>
+    </div>
+  </section>
+  <!-- community picture layout ends here-->
+  <footer>
+  <div class="footer">
+    <div class="footer__rights">
+      <img src="/temp/pic/18.png" alt="icon">
+      <p>Managed by Solana Foundation</p>
+      <ul>
+        <li><i class="fa-brands fa-youtube"></i></li>
+        <li><i class="fa-brands fa-square-twitter"></i></li>
+        <li><i class="fa-brands fa-discord"></i></li>
+        <li><i class="fa-brands fa-square-github"></i></li>
+        <li><i class="fa-brands fa-telegram"></i></li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      <div>
+        <h3 class="first">stuff</h3>
+        <p>stuff</p>
+        <p>stuff</p>
+        <p>stuff</p>
+        <p>stuff</p>
+        <p>stuff</p>
+      </div>
+      <div>
+        <h3 class="first">stuff</h3>
+        <p>stuff</p>
+        <p>stuff</p>
+        <p>stuff</p>
+      </div>
+      <div><i class="fa-solid fa-globe"></i>EN</div>
+    </div>
+
+  </div>
+</footer>
 </body>
+
 </html>
